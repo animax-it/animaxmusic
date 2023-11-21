@@ -15,6 +15,8 @@ import Theme from '../app/Theme';
 import useAppDimensions from '../hooks/useAppDimensions';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const AnyComponent = Component as any;
+
   const { isMobile } = useAppDimensions();
   const router = useRouter();
 
@@ -72,7 +74,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           >
             {isMobile ? <NavbarMobile /> : <NavbarDesktop />}
           </Stack>
-          <Component {...pageProps} />
+          
+        <AnyComponent {...pageProps} />
           {isMobile ? <FooterMobile /> : <FooterDesktop />}
         </Stack>
 
