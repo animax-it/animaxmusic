@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   const links: LinkProps[] = t('links', { returnObjects: true });
 
   return (
-    <Layout pageTitle="Inês Cruz" centered>
+    <Layout pageTitle="Animesh Sharma" centered>
       <Stack flex={1} justifyContent="flex-end" direction="column">
         <Stack
           direction="column"
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
             {t('blurb')}
           </Typography>
 
-          <Link href="/docs/CV_Ines_Cruz_Violin.pdf">
+          <Link href="/my-work">
             <a
               target="_blank"
               style={{ display: 'flex', justifyContent: 'center' }}
