@@ -55,7 +55,7 @@ export default function Navbar() {
         <Link href="/">
           <a>
             <Typography variant="h2" color="white.main">
-              JordyTheFourth
+              Animesh Sharma
             </Typography>
           </a>
         </Link>
@@ -108,15 +108,7 @@ export default function Navbar() {
           {[
             {
               icon: <Instagram color={colors.white.main} size={35} />,
-              link: 'https://www.instagram.com/jordi.the.fourth',
-            },
-            {
-              icon: <LinkedIn color={colors.white.main} size={35} />,
-              link: 'https://www.twitter.com/in/paago_dotgram',
-            },
-            {
-              icon: <Facebook color={colors.white.main} size={35} />,
-              link: 'https://www.facebook.com/paago.dotgram.5',
+              link: 'https://www.instagram.com/animax.it',
             },
           ].map(({ icon, link }, index) => (
             <Link href={link} key={index}>

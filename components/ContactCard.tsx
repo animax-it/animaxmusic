@@ -57,14 +57,14 @@ export default function ContactCard({
         <Stack direction="row" spacing={isMobile ? '10px' : '15px'}>
           <Email color={colors.white.main} size={isMobile ? 25 : 35} />
           <Typography color="white.main" variant={isMobile ? 'h5' : 'h4'}>
-            cardinaljaydi@gmail.com
+            animesh.sharmag10@gmail.com
           </Typography>
         </Stack>
 
         <Stack direction="row" spacing={isMobile ? '10px' : '15px'}>
           <Phone color={colors.white.main} size={isMobile ? 25 : 35} />
           <Typography color="white.main" variant={isMobile ? 'h5' : 'h4'}>
-            0913-903-8815
+            +91-9066480828
           </Typography>
         </Stack>
       </Stack>
@@ -84,7 +84,7 @@ export default function ContactCard({
         <Formik
           initialValues={{
             from_name: '',
-            to_name: 'Inês Cruz',
+            to_name: 'Animesh Sharma',
             message: '',
             reply_to: '',
           }}

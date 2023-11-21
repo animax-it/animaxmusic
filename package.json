@@ -21,6 +21,7 @@
     "react-device-detect": "^2.2.2",
     "react-dom": "18.1.0",
     "react-i18next": "^11.18.1",
+    "react-player": "^2.13.0",
     "yup": "^0.32.11"
   },
   "devDependencies": {

@@ -52,18 +52,8 @@ const FooterMobile = () => {
       {[
         {
           icon: <Instagram color={colors.white.main} size={30} />,
-          link: 'https://www.instagram.com/ines.cruz.8/?hl=en',
+          link: 'https://www.instagram.com/animax.it/?hl=en',
           name: 'instagram',
-        },
-        {
-          icon: <LinkedIn color={colors.white.main} size={30} />,
-          link: 'https://www.linkedin.com/in/in%C3%AAs-cruz-03b9b1133/',
-          name: 'linkedin',
-        },
-        {
-          icon: <Facebook color={colors.white.main} size={30} />,
-          link: 'https://www.facebook.com/ines.cruz.77',
-          name: 'facebook',
         },
       ].map(({ icon, link, name }, index) => (
         <Link href={link} key={index}>
@@ -117,21 +107,6 @@ const FooterMobile = () => {
         >
           <Links />
         </Drawer>
-        <Typography color="white.main">|</Typography>
-        <Button
-          onClick={handleLanguage}
-          endIcon={
-            i18n.language === 'en-US' ? (
-              <Portugal size={15} />
-            ) : (
-              <UK size={15} />
-            )
-          }
-        >
-          <Typography color="white.main">
-            {i18n.language === 'en-US' ? 'português' : 'english'}
-          </Typography>
-        </Button>
       </Stack>
     </Stack>
   );

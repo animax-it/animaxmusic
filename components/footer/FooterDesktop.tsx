@@ -64,18 +64,8 @@ const FooterDesktop = () => {
         {[
           {
             icon: <Instagram color={colors.white.main} size={30} />,
-            link: 'https://www.instagram.com/jordi.the.fourth',
+            link: 'https://www.instagram.com/animax.it',
             name: 'instagram',
-          },
-          {
-            icon: <LinkedIn color={colors.white.main} size={30} />,
-            link: 'https://www.ttwitter.com/paago_dotgram',
-            name: 'linkedin',
-          },
-          {
-            icon: <Facebook color={colors.white.main} size={30} />,
-            link: 'https://www.facebook.com/paago.dotgram.5',
-            name: 'facebook',
           },
         ].map(({ icon, link, name }, index) => (
           <Link href={link} key={index}>
@@ -125,21 +115,6 @@ const FooterDesktop = () => {
           endIcon={<ListArrow color={colors.white.main} size={15} />}
         >
           <Typography color="white.main">{t('links')}</Typography>
-        </Button>
-        <Typography color="white.main">|</Typography>
-        <Button
-          onClick={handleLanguage}
-          endIcon={
-            i18n.language === 'en-US' ? (
-              <Portugal size={20} />
-            ) : (
-              <UK size={20} />
-            )
-          }
-        >
-          <Typography color="white.main">
-            {i18n.language === 'en-US' ? 'português' : 'english'}
-          </Typography>
         </Button>
       </Stack>
     </Stack>

@@ -1,10 +1,10 @@
 {
-  "title": "Artiste",
+  "title": "Musician",
   "links": [
     { "title": "my work", "link": "my-work" },
     { "title": "about", "link": "about" },
     { "title": "contact", "link": "contact" }
   ],
-  "blurb": "Alte artist based in Port-Harcourt. Experienced in writing, rapping and radio presentation.",
+  "blurb": "Singer | Song-writer | Guitarist | Based in Bangalore",
   "cvButton": "view my projects"
 }
