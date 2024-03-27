@@ -65,7 +65,7 @@ const Home: NextPage = () => {
 
           <Link href="/my-work">
             <a
-              target="_blank"
+              // target="_blank"
               style={{ display: 'flex', justifyContent: 'center' }}
             >
               <Button

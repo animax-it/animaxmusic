@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import type { NextPage } from 'next';
 import { Stack, Typography, Grid, IconButton, CircularProgress } from '@mui/material';
 import { useTranslation } from 'react-i18next';
@@ -6,15 +6,30 @@ import { useTranslation } from 'react-i18next';
 import Layout from '../components/Layout';
 
 const MyWork: NextPage = () => {
-  const { t } = useTranslation('work');
-  const workLinks: string[] = t('body', { returnObjects: true });
-  const [loading, setLoading] = useState<boolean[]>(new Array(workLinks.length).fill(true));
+  const [workLink , setWorkLink] = useState([])
+  const [loading, setLoading] = useState(true)
+  const prefix = 'https://drive.google.com/file/d/'
+  const postfix = '/preview'
 
-  const handleLoad = (index: number) => {
-    const updatedLoading = [...loading];
-    updatedLoading[index] = false;
-    setLoading(updatedLoading);
-  };
+  useEffect(()=>{
+    fetch(`https://www.googleapis.com/drive/v2/files?q='1VQ0kMfX0w2t3upP4AE1ntru4PwEdkdnq'+in+parents&key=AIzaSyCzj7yb5cndhqdKnZNRLwetPPrmaoNAobA`)
+    .then((resp)=> resp.json())
+    .then((res)=> {
+      let newArray = [] as any
+      res.items.map((item: { id: string; })=>{
+        newArray.push(prefix+item.id+postfix)
+      })
+      setWorkLink(newArray)
+  
+    })
+
+    setTimeout(()=>{
+      setLoading(false)
+    }, 12000)
+  }, [])
+
+  const { t } = useTranslation('work');
+
 
   return (
     <Layout pageTitle={t('page-title')} centered>
@@ -24,10 +39,10 @@ const MyWork: NextPage = () => {
         </Typography>
 
         <Grid container spacing={2}>
-          {workLinks.map((videoUrl, index) => (
+          {workLink.map((videoUrl, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
               <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-                {loading[index] && (
+                {loading && (
                   <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
                     <CircularProgress />
                   </div>
@@ -38,8 +53,7 @@ const MyWork: NextPage = () => {
                     height="100%"
                     src={videoUrl}
                     frameBorder="0"
-                    allowFullScreen
-                    onLoad={() => handleLoad(index)}
+                    allowFullScreen 
                   />
                 </IconButton>
               </div>

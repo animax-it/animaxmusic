@@ -26,9 +26,9 @@ export default function Layout({ pageTitle, children, centered }: Props) {
       maxWidth={isMobile ? '100vw' : maxWidthDesktop}
       paddingX={isMobile ? paddingXMobile : paddingXDesktop}
       width="100%"
-      sx={{
-        overflowY: 'scroll',
-      }}
+      // sx={{
+      //   overflowY: 'scroll',
+      // }}
     >
       <Head>
         {pageTitle && <title>{pageTitle}</title>}
