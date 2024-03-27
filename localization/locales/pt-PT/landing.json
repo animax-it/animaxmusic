@@ -1,0 +1,10 @@
+{
+  "title": "artiste",
+  "links": [
+    { "title": "mon travail", "link": "my-work" },
+    { "title": "a propos", "link": "about" },
+    { "title": "contact", "link": "contact" }
+  ],
+  "blurb": "Alte artiste basé à Port-Harcourt. Expérimenté dans l'écriture, le rap et la présentation radio.",
+  "cvButton": "voir mes projets"
+}
