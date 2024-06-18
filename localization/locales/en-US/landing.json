@@ -1,10 +1,10 @@
 {
-  "title": "Musician",
+  "title": "Live Band",
   "links": [
-    { "title": "my work", "link": "my-work" },
+    { "title": "our work", "link": "my-work" },
     { "title": "about", "link": "about" },
     { "title": "contact", "link": "contact" }
   ],
-  "blurb": "Singer | Song-writer | Guitarist | Based in Bangalore",
+  "blurb": "Bollywood | English Pop | Kannada melodies | Based in Bangalore",
   "cvButton": "view my projects"
 }

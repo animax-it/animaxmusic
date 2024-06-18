@@ -55,7 +55,7 @@ export default function Navbar() {
         <Link href="/">
           <a>
             <Typography variant="h2" color="white.main">
-              Animesh Sharma
+              The Bermuda Triangle
             </Typography>
           </a>
         </Link>
@@ -108,7 +108,7 @@ export default function Navbar() {
           {[
             {
               icon: <Instagram color={colors.white.main} size={35} />,
-              link: 'https://www.instagram.com/animax.it',
+              link: 'https://www.instagram.com/thebermudatriangleband',
             },
           ].map(({ icon, link }, index) => (
             <Link href={link} key={index}>

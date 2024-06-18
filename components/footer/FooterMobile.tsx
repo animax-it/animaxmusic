@@ -52,7 +52,7 @@ const FooterMobile = () => {
       {[
         {
           icon: <Instagram color={colors.white.main} size={30} />,
-          link: 'https://www.instagram.com/animax.it/?hl=en',
+          link: 'https://www.instagram.com/thebermudatriangleband//?hl=en',
           name: 'instagram',
         },
       ].map(({ icon, link, name }, index) => (

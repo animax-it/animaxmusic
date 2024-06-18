@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   const links: LinkProps[] = t('links', { returnObjects: true });
 
   return (
-    <Layout pageTitle="Animesh Sharma" centered>
+    <Layout pageTitle="The Bermuda Triangle" centered>
       <Stack flex={1} justifyContent="flex-end" direction="column">
         <Stack
           direction="column"

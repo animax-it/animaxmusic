@@ -64,7 +64,7 @@ const FooterDesktop = () => {
         {[
           {
             icon: <Instagram color={colors.white.main} size={30} />,
-            link: 'https://www.instagram.com/animax.it',
+            link: 'https://www.instagram.com/thebermudatriangleband',
             name: 'instagram',
           },
         ].map(({ icon, link, name }, index) => (
