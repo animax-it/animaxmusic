@@ -57,7 +57,7 @@ export default function ContactCard({
         <Stack direction="row" spacing={isMobile ? '10px' : '15px'}>
           <Email color={colors.white.main} size={isMobile ? 25 : 35} />
           <Typography color="white.main" variant={isMobile ? 'h5' : 'h4'}>
-            animesh.sharmag10@gmail.com
+            thebermudatriangleband@gmail.com
           </Typography>
         </Stack>
 
