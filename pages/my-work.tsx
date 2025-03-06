@@ -38,24 +38,28 @@ const MyWork: NextPage = () => {
           {t('title')}
         </Typography>
 
-        <Grid container spacing={2}>
+        <Grid container rowGap={3} columnGap={10} justifyContent="center">
           {workLink.map((videoUrl, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
-              <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+              <div style={{ position: 'relative', width: '100%', overflow: 'hidden', paddingTop: '177.77%'}}>
                 {loading && (
                   <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
                     <CircularProgress />
                   </div>
                 )}
-                <IconButton>
+                {/* <IconButton> */}
                   <iframe
-                    width="100%"
-                    height="100%"
+                    style={{
+                      position: 'absolute', top: 0, left: 0,  bottom: 0,
+                        right: 0,
+                        width: '100%',
+                        height: '100%',
+                        border: 'none'
+                    }} 
                     src={videoUrl}
-                    frameBorder="0"
                     allowFullScreen 
                   />
-                </IconButton>
+                {/* </IconButton> */}
               </div>
             </Grid>
           ))}
