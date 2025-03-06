@@ -1,10 +1,10 @@
 {
   "title": "Find Yourself Lost in Music",
   "links": [
-    { "title": "our work", "link": "my-work" },
-    { "title": "about", "link": "about" },
-    { "title": "contact", "link": "contact" }
+    { "title": "Live Shows", "link": "my-work" },
+    { "title": "About Us", "link": "about" },
+    { "title": "Contact", "link": "contact" }
   ],
   "blurb": "Bollywood | English Pop | Kannada melodies | Based in Bangalore",
-  "cvButton": "Go To Gigs"
+  "cvButton": "Watch Our Gigs"
 }

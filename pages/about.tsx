@@ -13,7 +13,8 @@ const About: NextPage = () => {
   const { isMobile } = useAppDimensions();
   const { t } = useTranslation('about');
 
-  const about: string[] = t('body', { returnObjects: true });
+  const about1: string[] = t('body1', { returnObjects: true });
+  const about2: string[] = t('body2', { returnObjects: true });
 
   if (isMobile) {
     return (
@@ -54,11 +55,12 @@ const About: NextPage = () => {
               variant="h2"
               zIndex={2}
             >
-              {t('title')}
+              {t('title1')}
             </Typography>
           </Stack>
-
-          {about.map((paragraph, index) => (
+          
+          <Stack alignItems="center" width="100%">
+            {about1.map((paragraph, index) => (
             <Typography
               key={index}
               className="Roboto"
@@ -67,6 +69,31 @@ const About: NextPage = () => {
             >
               {paragraph}
             </Typography>
+
+          ))}
+          </Stack>
+
+          <Stack alignItems="center"  width="100%">
+            <Typography
+              alignSelf="center"
+              color="white.main"
+              variant="h2"
+              zIndex={2}
+            >
+              {t('title2')}
+            </Typography>
+          </Stack>
+
+          {about2.map((paragraph, index) => (
+            <Typography
+              key={index}
+              className="Roboto"
+              color="white.main"
+              zIndex={2}
+            >
+              {paragraph}
+            </Typography>
+
           ))}
         </Stack>
       </Layout>
@@ -120,10 +147,10 @@ const About: NextPage = () => {
           variant="h2"
           zIndex={2}
         >
-          {t('title')}
+          {t('title1')}
         </Typography>
 
-        {about.map((paragraph, index) => (
+        {about1.map((paragraph, index) => (
           <Typography
             key={index}
             className="Roboto"
@@ -134,16 +161,27 @@ const About: NextPage = () => {
           </Typography>
         ))}
 
-        <Box
-          height="100%"
-          id="about-gradient-desktop"
-          maxWidth="900px"
-          minWidth="300px"
-          position="fixed"
-          width="60%"
-          zIndex={1}
-        />
-      </Stack>
+<Typography
+          alignSelf="center"
+          color="white.main"
+          variant="h2"
+          zIndex={2}
+        >
+          {t('title2')}
+        </Typography>
+
+        {about2.map((paragraph, index) => (
+          <Typography
+            key={index}
+            className="Roboto"
+            color="white.main"
+            zIndex={2}
+          >
+            {paragraph}
+          </Typography>
+        ))}
+       </Stack>
+
     </Layout>
   );
 };

@@ -15,6 +15,8 @@ import {
 } from '../Icons';
 // import { LogoLarge } from '../Logos';
 // import { Settings, MenuHamburger } from '../Icons';
+import Image from 'next/image';
+import BandLogo from '../../public/images/BandLogo.png';
 
 export default function Navbar() {
   const { maxWidthDesktop, paddingXDesktop } = useAppDimensions();
@@ -53,10 +55,17 @@ export default function Navbar() {
         width="100%"
       >
         <Link href="/">
-          <a>
-            <Typography variant="h2" color="white.main">
-              The Bermuda Triangle
-            </Typography>
+          <a><Stack 
+          direction="row"
+          spacing="10px"
+        >
+          <Stack> 
+            <Image src={BandLogo.src} width='60px' height='50px'/>
+            </Stack>
+          <Stack>
+          <Typography variant="h2" color="white.main"> The Bermuda Triangle </Typography>
+          </Stack> 
+          </Stack>
           </a>
         </Link>
 
